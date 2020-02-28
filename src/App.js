@@ -7,14 +7,16 @@ import "./App.css";
 import { Helmet } from "react-helmet";
 import Header from './components/Header.jsx';
 import Footer from "./components/Footer.jsx";
+import Gallery from "./components/Gallery.js";
 
 function App() {
   return (
     <div className="App">
       <Helmet>
-        <title>mousewheel_checker</title>
+        <title>Gallery</title>
         <meta charSet="utf-8" />
       </Helmet>
+      <Gallery/>
       <Header/>
       <Footer/>
     </div>

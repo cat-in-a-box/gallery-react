@@ -1,14 +1,17 @@
-@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("components/files/font.woff2");
+}
 
- /*CSS в Реакте не хочет грузить бэкграунд из public, ругается на это. Поэтому добавил в src/components, оттуда грузит нормально*/
+/*CSS в Реакте не хочет грузить бэкграунд из public, ругается на это. Поэтому добавил в src/components, оттуда грузит нормально*/
 * {
-  margin: 0;
-  padding: 0;
   font-family: 'Josefin Sans', sans-serif;
-  background-image: url(components/Background.jpg);
+  background-image: url(components/files/Background.jpg);
   background-repeat: repeat;
   color: rgb(66, 66, 66);
 }
+
+/****Navbar****/
 
 .navbar {
   position: absolute;
@@ -17,237 +20,80 @@
   transform: translate(-50%, -50%);
 }
 
-.navbarButton1 {
-  display:inline-block;
-  margin: 1em;
-  margin-top: 1em;
-}
-
-.navbarButton2 {
-  display:inline-block;
-  margin: 1em;
-  margin-top: 1em;
-}
-
-.navbarButton3 {
-  display:inline-block;
-  margin: 1em;
-  margin-top: 1em;
-}
-
-.navbarButton4 {
-  display:inline-block;
-  margin: 1em;
-  margin-top: 1em;
-}
-
 .navbar a {
-  display:inline-block;
+  display: inline-block;
   letter-spacing: 1px;
-  text-align:center;
+  text-align: center;
   text-decoration: none;
   font-size: 1.3em;
 }
 
-.navbar a:hover { 
-  font-weight:bold;
+.navbar a:hover {
+  font-weight: bold;
 }
 
-.Face {
-  position: absolute;
-  left: 50%;
-  top: 45%;
-  transform: translate(-50%, -50%);
-}
-
-.Face h1 {
-  float: center;
-  text-align: center;
-  font-size: 3em;
-}
-
-.Face h2 {
-  float: center;
-  margin-top:0.2em;
-  text-align: center;
-  font-size: 3em;
-}
-
-/* Анимация реакт иконки */
-.reactIcon {
-  float: center;
-  text-align: center;
-  font-size: 42px;
-  animation-name: spin;
-  animation-duration: 18000ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear; 
-  background: transparent;
-}
-
-/*Собственно сама анимация: */
-@keyframes spin {
-  from {transform:rotate(0deg);}
-  to {transform:rotate(360deg);}
-}
-
-.About {
-  position: absolute; 
-  left: 50%;
-  top: 95%;
-  transform: translate(-50%, -50%);
-}
-
-.About h1{
-  float: center;
-  text-align: center;
-  margin-top:6em; 
-  font-size: 2.5em;
-  margin-bottom:1em;  
-}
-
-.About p{
-  float: center;
-  text-align: center;
-  font-size: 18px;
-  margin-top:18px;  
-  margin-bottom:18px;  
-}
-
-.Works {
-  position: absolute;
-  left: 50%;
-  top: 165%;
-  width: 50em;
-  height: 50%;
-  margin-top:6em;  
-  margin-bottom:5em;
-  transform: translate(-50%, -50%);
-  
-}
-.Works b {
-  background: white;
-}
-
-.Works h1 {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 2.5em;
-}
-
-.WorksPlaceholder {
-  position: absolute;
-  left: 50%;
-  top: 55%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 85em;
-}
-
-.Card {
-  box-shadow: rgb(211, 211, 211) 2px 2px 30px 0px;
-  font-family: "Cormorant Garamond", serif;
-  height: 400px;
-  margin-bottom: 30px;
-  margin-left: 30px;
-  margin-right: 30px;
-  margin-top: 30px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-top: 0px;
-  position: relative;
-  text-align: center;
-  transition-delay: 0s;
-  transition-duration: 0.2s;
-  transition-property: all;
-  transition-timing-function: ease;
-  width: 250px;
-  height: 320px;
-  border-radius: 0.5em;
-  display: block;
-  text-decoration: none;
-  background: white;
-  border: 1px solid rgba(75, 71, 71, 0.349);
-}
-
-.Card img {
-  margin:1.5em;
-  width: 60%;
-  height: 42%;
-  background: white;
-}
-
-.Card img:nth-child(2){
-  display: none;
-}
-
-.Card:hover img:nth-child(2) {
-  display: inline;  
-}
-
-.Card:hover img:nth-child(1) {
-  display: none;  
-}
-
-.Card h3 {
-  font-size: 1.2em;
-  background: white;
- }
-.Card h4 {
- margin-top: 0.8em;
- font-weight: 2;
- background: white;
-}
-
-.Card h4:hover {
-  margin-top: 0.8em;
-  font-weight: 2;
-  background: white;
- }
-
-.Card:hover {
-  transform: scale(1.03);
-  background: white;
-}
-
-.CardContainer {
-  margin: 2px 16px;
-  background: white;
-}
-
+/***Footer***/
 .Footer {
   position: absolute;
   left: 50%;
-  top: 240%;
+  bottom: 1px;
   transform: translate(-50%, -50%);
   text-align: center;
   border: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .Footer p {
-  margin-bottom:1em;
+  margin-bottom: 1em;
 }
 
-.Contact {
+.row-container {
+  transform: translate(0%, 65%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thumbnail {
+  box-shadow: rgba(8, 5, 29, 0.86) 1px 1px 4px;
+  border-radius: 0.8em;
+  height: 180px;
+  width: 300px;
+  margin: 15px;
+}
+
+.thumbnail:hover {
+  transform: scale(0.98);
+}
+.thumbnail:active {
+  transform: scale(0.96);
+}
+
+.view__container {
+  text-decoration: none;
   position: absolute;
-  top: 217%;
   left: 50%;
-  text-align: center;
-  border: black;
+  top: 50%;
   transform: translate(-50%, -50%);
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 2em;
 }
 
-.Contact h1 {
-  font-size: 2.5em;
-  text-align: center;
+.view__image {
+  box-shadow: rgba(8, 5, 29, 0.64) 1px 1px 5px;
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+  border-radius: 1.5em;
+}
+.view__image:active {
+  transform: scale(0.98);
 }
 
-.Contact p {
-  font-size: 1.5em;
-  text-align: center;  
+.row-container {
+  width: 100%;
 }
+
