@@ -1,4 +1,4 @@
-import React, { PureComponent } from "react";
+import React from "react";
 
 const images = [
   ["pic4", "pic10", "pic3", "pic12"],
@@ -6,7 +6,7 @@ const images = [
   ["pic9", "pic2", "pic8", "pic11"]
 ];
 
-class Gallery extends PureComponent {
+export default class Gallery extends React.Component {
   state = {
     viewImage: null
   };
@@ -21,7 +21,7 @@ class Gallery extends PureComponent {
     return (
       <div className="row-container">
         {arr.map((key, i) => (
-          <img onClick={() => this.setViewImage(key)} src={`../${key}.png`} alt={key} key={i} draggable="false" className="thumbnail"/>
+          <img onClick={() => this.setViewImage(key)} src={`${key}.png`} alt={key} key={i} draggable="false" className="thumbnail"/>
         ))}
       </div>
     );
@@ -31,7 +31,7 @@ class Gallery extends PureComponent {
     if (this.state.viewImage) {
       return (
         <div className="view__container" onClick={() => this.setViewImage(null)}>
-          <img src={`../${this.state.viewImage}.png`} alt={this.state.viewImage} draggable="false" className="view__image"/>
+          <img src={`${this.state.viewImage}.png`} alt={this.state.viewImage} draggable="false" className="view__image"/>
         </div>
       );
     }
@@ -39,5 +39,3 @@ class Gallery extends PureComponent {
     return <div>{images.map(row => this.renderImage(row))}</div>;
   }
 }
-
-export default Gallery;
