@@ -1,11 +1,5 @@
 import React from "react";
 
-const images = [
-  ["pic4", "pic10", "pic3", "pic12"],
-  ["pic5", "pic6", "pic7", "pic1"],
-  ["pic9", "pic2", "pic8", "pic11"]
-];
-
 export default class Gallery extends React.Component {
   state = {
     viewImage: null
@@ -17,12 +11,21 @@ export default class Gallery extends React.Component {
     });
   };
 
-  renderImage(arr) {
+  renderImage() {
     return (
       <div className="row-container">
-        {arr.map((key, i) => (
-          <img onClick={() => this.setViewImage(key)} src={`${key}.png`} alt={key} key={i} draggable="false" className="thumbnail"/>
-        ))}
+          <img onClick={() => this.setViewImage("pic1.png")} src={"./pic1.png"} draggable="false" className="thumbnail" alt=""/>
+          <img onClick={() => this.setViewImage("pic2.png")} src={"./pic2.png"} draggable="false" className="thumbnail" alt=""/>
+          <img onClick={() => this.setViewImage("pic3.png")} src={"./pic3.png"} draggable="false" className="thumbnail" alt=""/>
+          <img onClick={() => this.setViewImage("pic4.png")} src={"./pic4.png"} draggable="false" className="thumbnail" alt=""/>
+          <img onClick={() => this.setViewImage("pic5.png")} src={"./pic5.png"} draggable="false" className="thumbnail" alt=""/>
+          <img onClick={() => this.setViewImage("pic6.png")} src={"./pic6.png"} draggable="false" className="thumbnail" alt=""/>
+          <img onClick={() => this.setViewImage("pic7.png")} src={"./pic7.png"} draggable="false" className="thumbnail" alt=""/>
+          <img onClick={() => this.setViewImage("pic8.png")} src={"./pic8.png"} draggable="false" className="thumbnail" alt=""/>
+          <img onClick={() => this.setViewImage("pic9.png")} src={"./pic9.png"} draggable="false" className="thumbnail" alt=""/>
+          <img onClick={() => this.setViewImage("pic10.png")} src={"./pic10.png"} draggable="false" className="thumbnail" alt=""/>
+          <img onClick={() => this.setViewImage("pic11.png")} src={"./pic11.png"} draggable="false" className="thumbnail" alt=""/>
+          <img onClick={() => this.setViewImage("pic12.png")} src={"./pic12.png"} draggable="false" className="thumbnail" alt=""/>
       </div>
     );
   }
@@ -30,12 +33,13 @@ export default class Gallery extends React.Component {
   render() {
     if (this.state.viewImage) {
       return (
-        <div className="view__container" onClick={() => this.setViewImage(null)}>
-          <img src={`${this.state.viewImage}.png`} alt={this.state.viewImage} draggable="false" className="view__image"/>
+        <div className="viewContainer" onClick={() => this.setViewImage(null)}>
+          <img src= {this.state.viewImage} draggable="false" className="viewImage" alt=""/>
+          <div className="Text">PRESS AGAIN TO GO BACK</div>
         </div>
       );
     }
 
-    return <div>{images.map(row => this.renderImage(row))}</div>;
+    return <div>{this.renderImage()}</div>;
   }
 }

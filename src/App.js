@@ -6,7 +6,6 @@ import "./App.css";
 // Поставил еще React-Scrollable-Anchor для красивых якорей и плавного перемещения
 import { Helmet } from "react-helmet";
 import Header from './components/Header.jsx';
-import Footer from "./components/Footer.jsx";
 import Gallery from "./components/Gallery.js";
 
 function App() {
@@ -18,7 +17,6 @@ function App() {
       </Helmet>
       <Gallery/>
       <Header/>
-      <Footer/>
     </div>
   );
 }
