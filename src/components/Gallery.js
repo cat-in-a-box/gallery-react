@@ -13,7 +13,7 @@ export default class Gallery extends React.Component {
 
   renderImage() {
     return (
-      <div className="row-container">
+      <div className="row-container" draggable="false">
           <img onClick={() => this.setViewImage("pic1.png")} src={"./pic1.png"} draggable="false" className="thumbnail" alt=""/>
           <img onClick={() => this.setViewImage("pic2.png")} src={"./pic2.png"} draggable="false" className="thumbnail" alt=""/>
           <img onClick={() => this.setViewImage("pic3.png")} src={"./pic3.png"} draggable="false" className="thumbnail" alt=""/>
@@ -33,7 +33,7 @@ export default class Gallery extends React.Component {
   render() {
     if (this.state.viewImage) {
       return (
-        <div className="viewContainer" onClick={() => this.setViewImage(null)}>
+        <div className="viewContainer" onClick={() => this.setViewImage(null)} draggable="false">
           <img src= {this.state.viewImage} draggable="false" className="viewImage" alt=""/>
           <div className="Text">PRESS AGAIN TO GO BACK</div>
         </div>
