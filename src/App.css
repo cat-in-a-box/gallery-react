@@ -15,14 +15,14 @@
 /* Smallest devices (300px) */
 @media only screen and (min-width: 300px) {
 
-  .navbar {
+  .Header {
     position: absolute;
     left: 50%;
     top: 5%;
     transform: translate(-50%, -50%);
   }
 
-  .navbar a {
+  .Header a {
     display: inline-block;
     letter-spacing: 1px;
     text-align: center;
@@ -30,7 +30,7 @@
     font-size: 1em;
   }
 
-  .navbar a:hover {
+  .Header a:hover {
     font-weight: bold;
   }
 
@@ -102,14 +102,14 @@
 /* Small devices (600px) */
 @media only screen and (min-width: 600px) {
 
-  .navbar {
+  .Header {
     position: absolute;
     left: 50%;
     top: 5%;
     transform: translate(-50%, -50%);
   }
 
-  .navbar a {
+  .Header a {
     display: inline-block;
     letter-spacing: 1px;
     text-align: center;
@@ -117,7 +117,7 @@
     font-size: 1em;
   }
 
-  .navbar a:hover {
+  .Header a:hover {
     font-weight: bold;
   }
 
@@ -188,14 +188,14 @@
 
 /* Medium devices (768px) */
 @media only screen and (min-width: 768px) {
-  .navbar {
+  .Header {
     position: absolute;
     left: 50%;
     top: 5%;
     transform: translate(-50%, -50%);
   }
 
-  .navbar a {
+  .Header a {
     display: inline-block;
     letter-spacing: 1px;
     text-align: center;
@@ -203,7 +203,7 @@
     font-size: 1.3em;
   }
 
-  .navbar a:hover {
+  .Header a:hover {
     font-weight: bold;
   }
 
@@ -274,14 +274,14 @@
 
 /* Large devices (992px) */
 @media only screen and (min-width: 992px) {
-  .navbar {
+  .Header {
     position: absolute;
     left: 50%;
     top: 5%;
     transform: translate(-50%, -50%);
   }
 
-  .navbar a {
+  .Header a {
     display: inline-block;
     letter-spacing: 1px;
     text-align: center;
@@ -289,7 +289,7 @@
     font-size: 1.3em;
   }
 
-  .navbar a:hover {
+  .Header a:hover {
     font-weight: bold;
   }
 
@@ -360,14 +360,14 @@
 
 /* Large laptops and desktops, 1200px) */
 @media only screen and (min-width: 1200px) {
-  .navbar {
+  .Header {
     position: absolute;
     left: 50%;
     top: 5%;
     transform: translate(-50%, -50%);
   }
 
-  .navbar a {
+  .Header a {
     display: inline-block;
     letter-spacing: 1px;
     text-align: center;
@@ -375,7 +375,7 @@
     font-size: 1.3em;
   }
 
-  .navbar a:hover {
+  .Header a:hover {
     font-weight: bold;
   }
 
@@ -452,14 +452,14 @@
 
 /* Largest laptops and desktops, 1824px) */
 @media only screen  and (min-width : 1824px) {
-  .navbar {
+  .Header {
     position: absolute;
     left: 50%;
     top: 5%;
     transform: translate(-50%, -50%);
   }
 
-  .navbar a {
+  .Header a {
     display: inline-block;
     letter-spacing: 1px;
     text-align: center;
@@ -467,7 +467,7 @@
     font-size: 1.3em;
   }
 
-  .navbar a:hover {
+  .Header a:hover {
     font-weight: bold;
   }
 
