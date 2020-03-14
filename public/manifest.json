@@ -1,6 +1,6 @@
 {
   "short_name": "Gallery",
-  "name": "A simple gallery build on React",
+  "name": "A simple gallery built on React",
   "icons": [
     {
       "src": "favicon.ico",
