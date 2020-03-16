@@ -10,8 +10,8 @@ import Gallery from "./components/Gallery.js";
 function App() {
   return (
     <div className="App">
-      <Gallery/>
       <Header/>
+      <Gallery/>
     </div>
   );
 }
