@@ -14,18 +14,18 @@ export default class Gallery extends React.Component {
   renderImage() {
     return (
       <div className="row-container" draggable="false">
-          <img onClick={() => this.setViewImage("pic1-progressive.jpg")} src={"./pic1-progressive.jpg"} draggable="false" className="thumbnail" alt=""/>
-          <img onClick={() => this.setViewImage("pic2-progressive.jpg")} src={"./pic2-progressive.jpg"} draggable="false" className="thumbnail" alt=""/>
-          <img onClick={() => this.setViewImage("pic3-progressive.jpg")} src={"./pic3-progressive.jpg"} draggable="false" className="thumbnail" alt=""/>
-          <img onClick={() => this.setViewImage("pic4-progressive.jpg")} src={"./pic4-progressive.jpg"} draggable="false" className="thumbnail" alt=""/>
-          <img onClick={() => this.setViewImage("pic5-progressive.jpg")} src={"./pic5-progressive.jpg"} draggable="false" className="thumbnail" alt=""/>
-          <img onClick={() => this.setViewImage("pic6-progressive.jpg")} src={"./pic6-progressive.jpg"} draggable="false" className="thumbnail" alt=""/>
-          <img onClick={() => this.setViewImage("pic7-progressive.jpg")} src={"./pic7-progressive.jpg"} draggable="false" className="thumbnail" alt=""/>
-          <img onClick={() => this.setViewImage("pic8-progressive.jpg")} src={"./pic8-progressive.jpg"} draggable="false" className="thumbnail" alt=""/>
-          <img onClick={() => this.setViewImage("pic9-progressive.jpg")} src={"./pic9-progressive.jpg"} draggable="false" className="thumbnail" alt=""/>
-          <img onClick={() => this.setViewImage("pic10-progressive.jpg")} src={"./pic10-progressive.jpg"} draggable="false" className="thumbnail" alt=""/>
-          <img onClick={() => this.setViewImage("pic11-progressive.jpg")} src={"./pic11-progressive.jpg"} draggable="false" className="thumbnail" alt=""/>
-          <img onClick={() => this.setViewImage("pic12-progressive.jpg")} src={"./pic12-progressive.jpg"} draggable="false" className="thumbnail" alt=""/>
+          <img onClick={() => this.setViewImage("pic1-progressive.jpeg")} src={"./pic1-progressive.jpeg"} draggable="false" className="thumbnail" alt=""/>
+          <img onClick={() => this.setViewImage("pic2-progressive.jpeg")} src={"./pic2-progressive.jpeg"} draggable="false" className="thumbnail" alt=""/>
+          <img onClick={() => this.setViewImage("pic3-progressive.jpeg")} src={"./pic3-progressive.jpeg"} draggable="false" className="thumbnail" alt=""/>
+          <img onClick={() => this.setViewImage("pic4-progressive.jpeg")} src={"./pic4-progressive.jpeg"} draggable="false" className="thumbnail" alt=""/>
+          <img onClick={() => this.setViewImage("pic5-progressive.jpeg")} src={"./pic5-progressive.jpeg"} draggable="false" className="thumbnail" alt=""/>
+          <img onClick={() => this.setViewImage("pic6-progressive.jpeg")} src={"./pic6-progressive.jpeg"} draggable="false" className="thumbnail" alt=""/>
+          <img onClick={() => this.setViewImage("pic7-progressive.jpeg")} src={"./pic7-progressive.jpeg"} draggable="false" className="thumbnail" alt=""/>
+          <img onClick={() => this.setViewImage("pic8-progressive.jpeg")} src={"./pic8-progressive.jpeg"} draggable="false" className="thumbnail" alt=""/>
+          <img onClick={() => this.setViewImage("pic9-progressive.jpeg")} src={"./pic9-progressive.jpeg"} draggable="false" className="thumbnail" alt=""/>
+          <img onClick={() => this.setViewImage("pic10-progressive.jpeg")} src={"./pic10-progressive.jpe"} draggable="false" className="thumbnail" alt=""/>
+          <img onClick={() => this.setViewImage("pic11-progressive.jpeg")} src={"./pic11-progressive.jpeg"} draggable="false" className="thumbnail" alt=""/>
+          <img onClick={() => this.setViewImage("pic12-progressive.jpeg")} src={"./pic12-progressive.jpeg"} draggable="false" className="thumbnail" alt=""/>
       </div>
     );
   }
