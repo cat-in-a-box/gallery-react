@@ -35,7 +35,7 @@ export default class Gallery extends React.Component {
       return (
         <div className="viewContainer" onClick={() => this.setViewImage(null)} draggable="false">
           <img src= {this.state.viewImage} draggable="false" className="viewImage" alt=""/>
-          <div className="Text">PRESS AGAIN TO GO BACK</div>
+          <div className="Text">Нажми еще раз на картинку чтобы скрыть её</div>
         </div>
       );
     }
