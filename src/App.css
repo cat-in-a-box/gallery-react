@@ -104,8 +104,8 @@
 /** THUMBNAILS **/
 /** THUMBNAILS **/
 .thumbnail {
-  box-shadow: rgba(8, 5, 29, 0.86) 1px 1px 4px;
-  border-radius: 0.8em;
+  border: 1px solid rgba(121, 121, 121, 0.39);
+  border-radius: 1.5em;
 }
 .thumbnail:hover {
   transform: scale(1.02);
@@ -157,7 +157,7 @@
   border-radius: 2em;
 }
 .viewImage {
-  box-shadow: rgba(8, 5, 29, 0.64) 1px 1px 5px;
+  box-shadow: rgba(92, 92, 92, 1) 1px 1px 3px;
   text-decoration: none;
   border-radius: 1.5em;
   transition-delay: 0s;
@@ -169,9 +169,6 @@
   transform: scale(0.98);
   font-size: 1.2em;
   text-align: center;
-}
-.viewContainer:active {
-  font-size: 0.8em;
 }
 @media screen and (max-width:320px) {
   .viewContainer {
