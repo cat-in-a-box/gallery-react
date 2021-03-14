@@ -1,5 +1,5 @@
 # gallery-react
-https://cat-in-a-box.github.io/gallery
+Demo: https://cat-in-a-box.github.io/gallery
 
 A simple gallery written in react
  <br>
