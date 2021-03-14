@@ -1,5 +1,5 @@
 import React from "react";
-import BackButton from "../BackButton.jsx";
+import BackButton from "../BackButton";
 import GalleryComponent from "./components/GalleryComponent";
 
 function Gallery() {
@@ -8,7 +8,7 @@ function Gallery() {
             <BackButton/>
             <GalleryComponent/>
         </div>
-    );
+    )
 }
 
 export default Gallery;

@@ -1,11 +1,11 @@
 import React from "react";
 
 export default class GalleryComponent extends React.Component {
-    state = {
-        viewImage: null
-    };
 
-    setViewImage = (viewImage = null) => {
+    state = {
+        viewImage: ''
+    };
+    setViewImage = (viewImage: '') => {
         this.setState({
             viewImage
         });
@@ -82,7 +82,7 @@ export default class GalleryComponent extends React.Component {
         if (this.state.viewImage) {
             return (
                 <div className={"GalleryImageContainer"}
-                     onClick={() => this.setViewImage(null)}
+                     onClick={() => this.setViewImage('')}
                      draggable={"false"}>
                     <img src={this.state.viewImage}
                          draggable={"false"}
